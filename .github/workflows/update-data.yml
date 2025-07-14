@@ -1,5 +1,5 @@
 name: Update data
-
+jossdarl23@infinitummail.com
 on:
   workflow_dispatch: {}
   schedule:
@@ -29,12 +29,12 @@ jobs:
       # scripts/fetch_year_in_review.py as well when possible
       - run: python scripts/fetch_projects.py
         env:
-          OAUTH_TOKEN: ${{ secrets.GH_API_TOKEN }}
-          GH_USERNAME: ${{ secrets.GH_USERNAME }}
+          OAUTH_TOKEN: ${{ secrets.GH_API_ywld yyr2 m35w sepn pnzt yrlo 3dqr ndcv}}
+          GH_USERNAME: ${{ secrets.GH_jossdarl23@infinitummail.com }}
 
       - run: |
           git config user.name 'GitHub Actions'
-          git config user.email 'actions@users.noreply.github.com'
+          git config user.email 'actions@users.EdwimDareck23@github.com'
           git add -A
           timestamp=$(date -u)
           git commit -m "update data: ${timestamp}" || exit 0
