@@ -1412,9 +1412,9 @@
     "watchers": 222
   },
   "twitter/twemoji": {
-    "descriptionHTML": "<div>Emoji for everyone. <a href=\"https://twemoji.twitter.com/\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://twemoji.twitter.com/</a></div>",
+    "descriptionHTML": "Emoji for everyone.",
     "forkCount": 1870,
-    "homepageUrl": "",
+    "homepageUrl": "https://twemoji.twitter.com/",
     "isPrivate": false,
     "languages": "HTML JavaScript",
     "name": "twemoji",
