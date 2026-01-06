@@ -7,6 +7,8 @@
   --line-height-xjumbo: 2.5rem;
   --font-size-mini-jumbo: 1.6rem;
   --line-height-mini-jumbo: 1.8rem;
+  /* Darker primary blue for improved contrast (white on this yields ≥4.5:1) */
+  --tw-color-blue-primary-dark: #004a8d;
 }
 
 /* Animations */
@@ -77,7 +79,7 @@ main {
 
 // common styles across nav, header, and footer
 nav, .header, .footer {
-  background-color: var(--tw-color-blue-primary);
+  background-color: var(--tw-color-blue-primary-dark);
   color: white;
 
   @media (prefers-color-scheme: dark) {
@@ -123,6 +125,8 @@ nav {
 
 .home-link {
   font-weight: var(--feather-font-weight-bold);
+  // bump up to ≥18 pt bold so that 3.0:1 white-on-blue meets WCAG Large-text contrast
+  font-size: var(--font-size-mini-jumbo);
 }
 
 #nav-menu {
