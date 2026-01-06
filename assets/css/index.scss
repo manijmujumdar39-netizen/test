@@ -22,6 +22,15 @@
   height: 500px;
 }
 
+// ensure sufficient contrast on the Twitter embed link
+// target the <a> bearing the .twitter-timeline class itself,
+// plus any nested anchors under .twitter-timeline or .timeline-cell
+.twitter-timeline,
+.twitter-timeline a,
+.timeline-cell a {
+  color: var(--tw-color-blue-primary-dark) !important;
+}
+
 
 @media (min-width: 600px) {
   #follow-us .container {
