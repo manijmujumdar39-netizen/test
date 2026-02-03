@@ -11,7 +11,7 @@ pipeline {
         stage('Dependency Check') {
             steps {
                 sh '''
-                dependency-check \
+                /opt/homebrew/bin/dependency-check \
                   --project Test \
                   --scan . \
                   --out . \
@@ -28,3 +28,4 @@ pipeline {
         }
     }
 }
+
