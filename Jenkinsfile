@@ -2,10 +2,29 @@ pipeline {
     agent any
 
     stages {
-        stage('Test') {
+        stage('Checkout') {
             steps {
-                echo 'Jenkins pipeline working successfully'
+                checkout scm
             }
+        }
+
+        stage('Dependency Check') {
+            steps {
+                sh '''
+                dependency-check \
+                  --project Test \
+                  --scan . \
+                  --out . \
+                  --format HTML \
+                  --format XML
+                '''
+            }
+        }
+    }
+
+    post {
+        always {
+            dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
         }
     }
 }
